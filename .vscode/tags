@@ -1,0 +1,100 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ConfigSectionMap	../train.py	/^    def ConfigSectionMap(section):$/;"	kind:function	line:73
+CustomVariationalLayer	../fun.py	/^class CustomVariationalLayer(Layer):$/;"	kind:class	line:52
+MixupGenerator	../mixup_generator.py	/^class MixupGenerator():$/;"	kind:class	line:4
+Schedule	../train.py	/^class Schedule:$/;"	kind:class	line:24
+VGG_16	../vgg16.py	/^def VGG_16(input_shape=64, classes=101):$/;"	kind:function	line:29
+Wass1	../train.py	/^def Wass1(y_true, y_pred):$/;"	kind:function	line:57
+Wasserstein	../train.py	/^def Wasserstein(y_true, y_pred):$/;"	kind:function	line:52
+WideResNet	../wide_resnet.py	/^class WideResNet:$/;"	kind:class	line:17
+__call__	../mixup_generator.py	/^    def __call__(self):$/;"	kind:member	line:14
+__call__	../train.py	/^    def __call__(self, epoch_idx):$/;"	kind:member	line:28
+__call__	../wide_resnet.py	/^    def __call__(self):$/;"	kind:member	line:107
+__data_generation	../mixup_generator.py	/^    def __data_generation(self, batch_ids):$/;"	kind:member	line:33
+__get_exploration_order	../mixup_generator.py	/^    def __get_exploration_order(self):$/;"	kind:member	line:25
+__init__	../fun.py	/^    def __init__(self, **kwargs):$/;"	kind:member	line:53
+__init__	../mixup_generator.py	/^    def __init__(self, X_train, y_train, batch_size=32, alpha=0.2, shuffle=True, datagen=None):$/;"	kind:member	line:5
+__init__	../train.py	/^    def __init__(self, nb_epochs):$/;"	kind:member	line:25
+__init__	../wide_resnet.py	/^    def __init__(self, image_size, depth=16, k=8):$/;"	kind:member	line:18
+_h_decoded	../fun.py	/^_h_decoded = decoder_h(decoder_input)$/;"	kind:variable	line:101
+_layer	../wide_resnet.py	/^    def _layer(self, block, n_input_plane, n_output_plane, count, stride):$/;"	kind:member	line:97
+_wide_basic	../wide_resnet.py	/^    def _wide_basic(self, n_input_plane, n_output_plane, stride):$/;"	kind:member	line:36
+_x_decoded_mean	../fun.py	/^_x_decoded_mean = decoder_mean(_h_decoded)$/;"	kind:variable	line:102
+accumulate_results.py	../accumulate_results.py	1;"	kind:file	line:1
+batch_size	../fun.py	/^batch_size = 100$/;"	kind:variable	line:18
+calc_age	../utils.py	/^def calc_age(taken, dob):$/;"	kind:function	line:6
+call	../fun.py	/^    def call(self, inputs):$/;"	kind:member	line:62
+counter	../accumulate_results.py	/^                counter = 0$/;"	kind:variable	line:12
+create_db.py	../create_db.py	1;"	kind:file	line:1
+custom_loss1	../train.py	/^def custom_loss1(y_true, y_pred):$/;"	kind:function	line:62
+custom_loss2	../train.py	/^def custom_loss2(y_true, y_pred):$/;"	kind:function	line:65
+data	../accumulate_results.py	/^                        data=json.loads(line)$/;"	kind:variable	line:17
+data	../accumulate_results.py	/^                        data=json.loads(line)$/;"	kind:variable	line:21
+decoder_h	../fun.py	/^decoder_h = Dense(intermediate_dim, activation='relu')$/;"	kind:variable	line:45
+decoder_input	../fun.py	/^decoder_input = Input(shape=(latent_dim,))$/;"	kind:variable	line:100
+decoder_mean	../fun.py	/^decoder_mean = Dense(original_dim, activation='sigmoid')$/;"	kind:variable	line:46
+demo.py	../demo.py	1;"	kind:file	line:1
+digit_size	../fun.py	/^digit_size = 28$/;"	kind:variable	line:107
+draw_label	../demo.py	/^def draw_label(image, point, label, font=cv2.FONT_HERSHEY_SIMPLEX,$/;"	kind:function	line:23
+encoder	../fun.py	/^encoder = Model(x, z_mean)$/;"	kind:variable	line:90
+epoch	../accumulate_results.py	/^                            epoch = data['epoch']$/;"	kind:variable	line:25
+epoch	../accumulate_results.py	/^                epoch = 0$/;"	kind:variable	line:14
+epochs	../fun.py	/^epochs = 50$/;"	kind:variable	line:22
+epsilon_std	../fun.py	/^epsilon_std = 1.0$/;"	kind:variable	line:23
+eraser	../random_eraser.py	/^    def eraser(input_img):$/;"	kind:function	line:5
+f	../wide_resnet.py	/^        def f(net):$/;"	kind:function	line:37
+f	../wide_resnet.py	/^        def f(net):$/;"	kind:function	line:98
+figure	../fun.py	/^figure = np.zeros((digit_size * n, digit_size * n))$/;"	kind:variable	line:108
+final_list	../accumulate_results.py	/^final_list = []$/;"	kind:variable	line:6
+fun.py	../fun.py	1;"	kind:file	line:1
+generator	../fun.py	/^generator = Model(decoder_input, _x_decoded_mean)$/;"	kind:variable	line:103
+get_args	../create_db.py	/^def get_args():$/;"	kind:function	line:9
+get_args	../demo.py	/^def get_args():$/;"	kind:function	line:9
+get_args	../train.py	/^def get_args():$/;"	kind:function	line:38
+get_meta	../utils.py	/^def get_meta(mat_path, db):$/;"	kind:function	line:16
+get_random_eraser	../random_eraser.py	/^def get_random_eraser(p=0.5, s_l=0.02, s_h=0.4, r_1=0.3, r_2=1\/0.3, v_l=0, v_h=255):$/;"	kind:function	line:4
+grid_x	../fun.py	/^grid_x = norm.ppf(np.linspace(0.05, 0.95, n))$/;"	kind:variable	line:111
+grid_y	../fun.py	/^grid_y = norm.ppf(np.linspace(0.05, 0.95, n))$/;"	kind:variable	line:112
+h	../fun.py	/^h = Dense(intermediate_dim, activation='relu')(x)$/;"	kind:variable	line:27
+h_decoded	../fun.py	/^h_decoded = decoder_h(z)$/;"	kind:variable	line:47
+intermediate_dim	../fun.py	/^intermediate_dim = 256$/;"	kind:variable	line:21
+latent_dim	../fun.py	/^latent_dim = 2$/;"	kind:variable	line:20
+load_data	../utils.py	/^def load_data(mat_path):$/;"	kind:function	line:29
+main	../create_db.py	/^def main():$/;"	kind:function	line:25
+main	../demo.py	/^def main():$/;"	kind:function	line:31
+main	../train.py	/^def main():$/;"	kind:function	line:68
+mean_absolute_error	../train.py	/^def mean_absolute_error(y_true, y_pred):$/;"	kind:function	line:49
+mixup_generator.py	../mixup_generator.py	1;"	kind:file	line:1
+mk_dir	../utils.py	/^def mk_dir(dir):$/;"	kind:function	line:35
+n	../fun.py	/^n = 15  # figure with 15x15 digits$/;"	kind:variable	line:106
+original_dim	../fun.py	/^original_dim = 784$/;"	kind:variable	line:19
+plot_history	../plot_history.py	/^def plot_history(input_path):$/;"	kind:function	line:9
+plot_history.py	../plot_history.py	1;"	kind:file	line:1
+random_eraser.py	../random_eraser.py	1;"	kind:file	line:1
+result	../accumulate_results.py	/^            result = {'config':file , 'mean_absolute_error': val_mean_absolute_error, 'epoch': epoch }$/;"	kind:variable	line:27
+result	../accumulate_results.py	/^            result = {}$/;"	kind:variable	line:10
+sampling	../fun.py	/^def sampling(args):$/;"	kind:function	line:32
+train.py	../train.py	1;"	kind:file	line:1
+utils.py	../utils.py	1;"	kind:file	line:1
+vae	../fun.py	/^vae = Model(x, y)$/;"	kind:variable	line:71
+vae_loss	../fun.py	/^    def vae_loss(self, x, x_decoded_mean):$/;"	kind:member	line:57
+val_mean_absolute_error	../accumulate_results.py	/^                            val_mean_absolute_error = data['val_mean_absolute_error']$/;"	kind:variable	line:24
+val_mean_absolute_error	../accumulate_results.py	/^                val_mean_absolute_error = 10000$/;"	kind:variable	line:13
+vgg16.py	../vgg16.py	1;"	kind:file	line:1
+wide_resnet.py	../wide_resnet.py	1;"	kind:file	line:1
+x	../fun.py	/^x = Input(shape=(original_dim,))$/;"	kind:variable	line:26
+x_decoded_mean	../fun.py	/^x_decoded_mean = decoder_mean(h_decoded)$/;"	kind:variable	line:48
+x_test	../fun.py	/^x_test = x_test.astype('float32') \/ 255.$/;"	kind:variable	line:79
+x_test	../fun.py	/^x_test = x_test.reshape((len(x_test), np.prod(x_test.shape[1:])))$/;"	kind:variable	line:81
+x_test_encoded	../fun.py	/^x_test_encoded = encoder.predict(x_test, batch_size=batch_size)$/;"	kind:variable	line:93
+x_train	../fun.py	/^x_train = x_train.astype('float32') \/ 255.$/;"	kind:variable	line:78
+x_train	../fun.py	/^x_train = x_train.reshape((len(x_train), np.prod(x_train.shape[1:])))$/;"	kind:variable	line:80
+y	../fun.py	/^y = CustomVariationalLayer()([x, x_decoded_mean])$/;"	kind:variable	line:70
+z	../fun.py	/^z = Lambda(sampling, output_shape=(latent_dim,))([z_mean, z_log_var])$/;"	kind:variable	line:39
+z_log_var	../fun.py	/^z_log_var = Dense(latent_dim)(h)$/;"	kind:variable	line:29
+z_mean	../fun.py	/^z_mean = Dense(latent_dim)(h)$/;"	kind:variable	line:28

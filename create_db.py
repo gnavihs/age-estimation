@@ -10,11 +10,11 @@ def get_args():
     parser = argparse.ArgumentParser(description="This script cleans-up noisy labels "
                                                  "and creates database for training.",
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--output", "-o", type=str, required=True,
+    parser.add_argument("--output", "-o", type=str, default="/data/chercheurs/agarwals/DEX/imdb_crop/imdb_revised.mat",
                         help="path to output database mat file")
-    parser.add_argument("--db", type=str, default="wiki",
+    parser.add_argument("--db", type=str, default="imdb",
                         help="dataset; wiki or imdb")
-    parser.add_argument("--img_size", type=int, default=32,
+    parser.add_argument("--img_size", type=int, default=64,
                         help="output image size")
     parser.add_argument("--min_score", type=float, default=1.0,
                         help="minimum face_score")
@@ -29,7 +29,7 @@ def main():
     img_size = args.img_size
     min_score = args.min_score
 
-    root_path = "data/{}_crop/".format(db)
+    root_path = "/data/chercheurs/agarwals/DEX/{}_crop/".format(db)
     mat_path = root_path + "{}.mat".format(db)
     full_path, dob, gender, photo_taken, face_score, second_face_score, age = get_meta(mat_path, db)
 

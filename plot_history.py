@@ -1,42 +1,27 @@
 import pandas as pd
+import os
+import matplotlib
+matplotlib.use('TKAgg')
 import matplotlib.pyplot as plt
 import argparse
-import os
 
 
-def get_args():
-    parser = argparse.ArgumentParser(description="This script shows training graph from history file.")
-    parser.add_argument("--input", "-i", type=str, required=True,
-                        help="path to input history h5 file")
-    args = parser.parse_args()
-    return args
-
-
-def main():
-    args = get_args()
-    input_path = args.input
-
+def plot_history(input_path):
     df = pd.read_hdf(input_path, "history")
     input_dir = os.path.dirname(input_path)
-    plt.plot(df["dense_1_loss"], label="loss (gender)")
-    plt.plot(df["dense_2_loss"], label="loss (age)")
-    plt.plot(df["val_dense_1_loss"], label="val_loss (gender)")
-    plt.plot(df["val_dense_2_loss"], label="val_loss (age)")
-    plt.xlabel("number of epochs")
-    plt.ylabel("loss")
+    input_hist_file = os.path.basename(input_path)
+
+    plt.plot(df["loss"], label="loss (age)")
+    plt.plot(df["val_loss"], label="val_loss (age)")
+    plt.xlabel("Number of Epochs")
+    plt.ylabel("Loss")
     plt.legend()
-    plt.savefig(os.path.join(input_dir, "loss.png"))
+    plt.savefig(os.path.join(input_dir, input_hist_file[8:-5]+"_loss.png"))
     plt.cla()
-
-    plt.plot(df["dense_1_acc"], label="accuracy (gender)")
-    plt.plot(df["dense_2_acc"], label="accuracy (age)")
-    plt.plot(df["val_dense_1_acc"], label="val_accuracy (gender)")
-    plt.plot(df["val_dense_2_acc"], label="val_accuracy (age)")
-    plt.xlabel("number of epochs")
-    plt.ylabel("accuracy")
+    
+    plt.plot(df["mean_average_error"], label="mean_average_error (age)")
+    plt.plot(df["val_mean_average_error"], label="val_mean_average_error (age)")
+    plt.xlabel("Number of Epochs")
+    plt.ylabel("Mean Average Error")
     plt.legend()
-    plt.savefig(os.path.join(input_dir, "accuracy.png"))
-
-
-if __name__ == '__main__':
-    main()
+    plt.savefig(os.path.join(input_dir, input_hist_file[8:-5]+"_accuracy.png"))
